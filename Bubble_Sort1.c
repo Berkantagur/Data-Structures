@@ -54,10 +54,10 @@ int main(){
         scanf("%d", &array[i]);
     }
 
-    printf("Before Bubble Sorting ");
+    printf("Before Bubble Sorting: ");
     showArray(array, size);
     bubbleSort(array, size);
-    printf("\nAfter Bubble Sorting ");
+    printf("\nAfter Bubble Sorting: ");
     showArray(array, size);
     
     free (array);
