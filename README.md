@@ -6,16 +6,23 @@ Bu depo, Çukurova Üniversitesi CEN 215 Data Structures Lab dersi kapsamında g
 
 Her lab çalışması, bu depoda Weeks of Labs adlı klasör içinde bulunmaktadır, ilgili lab çalışmasına ait kod dosyaları haftalık olarak yüklenmiştir. Aşağıda daha kolay anlaşılması için örnek verilmiştir.
 
-- **[Week 2](Week2.c)** -> 2. hafta yapılan lab dersindeki kodları içerir.
-- **[Week 3](Week3.c/)** -> 3. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 2](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week2.c)** -> 2. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 3](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week3.c)** -> 3. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 6](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week6.c)** -> 6. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 7](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week7.c)** -> 7. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 10](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week10.c)** -> 10. hafta yapılan lab dersindeki kodları içerir.
+- **[Week 12](https://github.com/Berkantagur/Data-Structures/blob/main/Weeks%20of%20Lab/Week12.c)** -> 12. hafta yapılan lab dersindeki kodları içerir.
 
 ## Kod Pratikleri
 
 Bu bölümde, kendi gelişimim amacıyla gerçekleştirdiğim kod pratikleri bulunmaktadır. Her pratik, ilgili konu veya algoritma üzerine odaklanmaktadır.
 
-- **[Bubble Sort](Bubble_Sort.c)**
-- **[Heap Sort](Heap_Sort.c)**
-- https://github.com/Berkantagur/Data-Structures/blob/main/Insertion_Sort.c
+- **[Bubble Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Bubble_Sort.c)** -> Bubble Sort Algoritması kodlarını içerir.
+- **[Heap Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Heap_Sort.c)** -> Heap Sort Algoritması kodlarını içerir.
+- **[Insertion Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Insertion_Sort.c)** -> Insertion Sort Algoritması kodlarını içerir.
+- **[Merge Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Merge_Sort.c)** -> Merge Sort Algoritması kodlarını içerir.
+- **[Quick Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Quick_Sort.c)** -> Quick Sort Algoritması kodlarını içerir.
+- **[Selection Sort](https://github.com/Berkantagur/Data-Structures/blob/main/Selection_Sort.c)** -> Selection Sort Algoritması kodlarını içerir.
   
 ## Nasıl Başlamalıyım?
 
