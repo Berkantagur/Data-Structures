@@ -41,6 +41,28 @@ int addNodeHead(int data){
     return 0;
 }
 
+void deleteNode(int data){
+
+    temp = head;
+    struct node *prev;
+
+    if (temp != NULL && temp->data == data) {
+        head = temp->next;
+        free(temp);
+    }
+
+    while (temp != NULL && temp->data != data) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL)
+        printf("Data is not present in the list!");
+
+    prev->next = temp->next;
+    free(temp);
+}
+
 int print(){
     
     temp = head;
@@ -72,7 +94,18 @@ int main () {
         else if (inputOp == 2) addNode(input);
         else printf("Please choice a valid operator!!!");
 
-        printf("\nDo you want to continue?\n Press 0 for No and 1 for Yes : ");
+        printf("\nDo you want to continue?\n Press 0 for No and 1 for Yes: ");
+        scanf("%d", choice);
+    }
+    print();
+    printf("Do you want to delete the any data?\n Press 0 for No and 1 for Yes: ");
+    scanf("%d", choice);
+
+    while (choice){
+        printf("Please enter the data you want to delete: ");
+        scanf("%d", input);
+        deleteNode(input);
+        printf("Do you want to delete the any data?\n Press 0 for No and 1 for Yes: ");
         scanf("%d", choice);
     }
     print();
