@@ -84,11 +84,12 @@ int main () {
 
     while (choice) {
 
-        printf("Please choice an operator: Add Data Head -> 1  Add Data Normally -> 2: ");
-        scanf("%d", inputOp);
 
         printf("Please enter the data: ");
         scanf("%d", input);
+
+        printf("Please choice an operator: Add Data Head -> 1  Add Data Normally -> 2: ");
+        scanf("%d", inputOp);
 
         if (inputOp == 1) addNodeHead(input);
         else if (inputOp == 2) addNode(input);
