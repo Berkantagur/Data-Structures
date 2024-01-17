@@ -35,6 +35,7 @@ int addNodeHead(int data){
         head = temp = new_node;
     } else {//Linked List is not Empty
         new_node = (struct node *)malloc(sizeof(struct node));
+        new_node ->data = data;
         new_node->next = head;
         head = new_node;
     }
@@ -86,28 +87,28 @@ int main () {
 
 
         printf("Please enter the data: ");
-        scanf("%d", input);
+        scanf("%d", &input);
 
         printf("Please choice an operator: Add Data Head -> 1  Add Data Normally -> 2: ");
-        scanf("%d", inputOp);
+        scanf("%d", &inputOp);
 
         if (inputOp == 1) addNodeHead(input);
         else if (inputOp == 2) addNode(input);
         else printf("Please choice a valid operator!!!");
 
         printf("\nDo you want to continue?\n Press 0 for No and 1 for Yes: ");
-        scanf("%d", choice);
+        scanf("%d", &choice);
     }
     print();
     printf("Do you want to delete the any data?\n Press 0 for No and 1 for Yes: ");
-    scanf("%d", choice);
+    scanf("%d", &choice);
 
     while (choice){
         printf("Please enter the data you want to delete: ");
-        scanf("%d", input);
+        scanf("%d", &input);
         deleteNode(input);
         printf("Do you want to delete the any data?\n Press 0 for No and 1 for Yes: ");
-        scanf("%d", choice);
+        scanf("%d", &choice);
     }
     print();
     return 0;
