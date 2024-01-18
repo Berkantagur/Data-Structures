@@ -9,7 +9,7 @@ typedef struct node{
 Que *front = NULL;
 Que *rear = NULL;
 
-int enque(int item){
+int enque(int item){ // O(1)
 
     Que *newnode;
     newnode = (Que *)malloc(sizeof(Que));
@@ -22,7 +22,7 @@ int enque(int item){
     newnode->data = item;
     newnode->next = NULL;
 
-    if(front == NULL){
+    if(front == NULL && rear == NULL){
         front = newnode;
         rear = newnode;
     }
@@ -33,7 +33,7 @@ int enque(int item){
     return 0;
 }
 
-int dequeue(){
+int dequeue(){ // O(n)
 
     Que *temp;
     int item;
@@ -46,7 +46,7 @@ int dequeue(){
     temp = front;
     front = front->next;
 
-    if(front = NULL){
+    if(front == NULL){
         rear = NULL;
     }
 
@@ -74,7 +74,7 @@ void display(){
     index = front;
 
     printf("Queue is: ");
-    while(index != NULL){
+    while(index){
         printf("%d ", index->data);
         index = index->next;
     }
