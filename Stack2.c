@@ -1,22 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node{
+typedef struct node
+{
     int data;
     struct node *next;
-}Stack;
+} Stack;
 
 Stack *top = NULL;
 
-int push(int item){
+int push(int item)
+{
 
     Stack *newnode;
     newnode = (Stack *)malloc(sizeof(Stack));
 
-    if(newnode == NULL){
+    if (newnode == NULL)
+    {
         printf("ERROR, not enough memory");
         return -1;
-    }else{
+    }
+    else
+    {
         newnode->data = item;
         newnode->next = top;
         top = newnode;
@@ -24,15 +29,18 @@ int push(int item){
     }
 }
 
-int pop(){
+int pop()
+{
 
     Stack *temp;
     int i;
-    if(top == NULL){
+    if (top == NULL)
+    {
         printf("ERROR, stack is empty");
         return -1;
     }
-    else{
+    else
+    {
         temp = top;
         i = top->data;
         top = top->next;
@@ -41,19 +49,22 @@ int pop(){
     }
 }
 
-void display(){
+void display()
+{
 
     Stack *index;
     index = top;
-    
-    while(index != NULL){
+
+    while (index != NULL)
+    {
         printf("%d ", index->data);
         index = index->next;
     }
     printf("\n");
 }
 
-int main(){
+int main()
+{
 
     int i;
     push(1);
