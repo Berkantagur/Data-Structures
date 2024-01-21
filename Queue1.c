@@ -33,7 +33,7 @@ int enque(int item){ // O(1)
     return 0;
 }
 
-int dequeue(){ // O(n)
+int dequeue(){ // O(1)
 
     Que *temp;
     int item;
@@ -55,7 +55,7 @@ int dequeue(){ // O(n)
     return item;
 }
 
-void reset(){
+void reset(){ // O(n)
 
     Que *temp;
     temp = front;
@@ -68,13 +68,13 @@ void reset(){
     rear = NULL;
 }
 
-void display(){
+void display(){ // O(n)
 
     Que *index;
     index = front;
 
     printf("Queue is: ");
-    while(index){
+    while(index != NULL){
         printf("%d ", index->data);
         index = index->next;
     }
